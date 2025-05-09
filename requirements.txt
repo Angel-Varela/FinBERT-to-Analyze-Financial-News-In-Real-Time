@@ -1,0 +1,7 @@
+transformers==4.36.1
+typing==3.10.0.0
+torch>=2.0.0
+pandas>=1.5.3
+bs4
+requests>=2.31.0
+colorama==0.4.6
