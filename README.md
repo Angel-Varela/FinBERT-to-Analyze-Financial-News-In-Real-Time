@@ -1,19 +1,35 @@
-# FinBERT-to-Analyze-Finantial-News-In-Real-Time
+# FinBERT: Real-Time Financial News Sentiment Analysis
 
-This repository teachs you how to scrapt real time data from ANY website you wish and extract the title, content, probability and senitments of the news.
+## Overview
+This repository teaches you how to scrape real-time financial news from **ANY** website and extract key insights, including **title, content, sentiment probability, and overall sentiment classification**.
 
-For this purpose we use FinBERT a BERT model. In this case FinBERT stands for BERT (A powerful language model used for various natural language processing (NLP) tasks) and Fin stands for Finantial data. this model is fine tuned in finantial datat to outedge common NLP models such as ChatGPT.
+We utilize **FinBERT**, a specialized fine-tuned BERT model designed for financial data analysis. Unlike general NLP models, FinBERT excels in extracting and analyzing financial sentiment with greater accuracy.
 
-FinBERT Sentiment Analysis to scratch and estimate the news in 3 different WebSites:
+## Websites
+This implementation demonstrates sentiment analysis for financial news scraped from the following sources:
+- [Benzinga](https://www.benzinga.com) (XAU/USD news)
+- [Investing](https://www.investing.com) (XAU/USD news)
+- [Financial Times](https://www.ft.com) (General market news)
+- Any other website with the following structure: (News Block, Title and Content of news)
 
--https://www.benzinga.com (XAU-USD)
+## Purpose
+The goal of this repository is to **teach users how to scrape, analyze, and store financial news in a structured DataFrame** for further use. You can apply these techniques to ANY website, as long as they provide a clear news block with titles and contents.
 
--https://www.investing.com (XAU-USD)
+For this experiment, we chose to analyze XAU/USD (Gold vs USD) market news—because, let's be honest, **gold is shiny and who doesn’t like shiny?** ✨
 
--https://www.ft.com (General Market News)
+## How It Works
+By running the `Real_Time_News.py` script, you'll automatically:
+1. Scrape financial news in **real-time**.
+2. Perform sentiment analysis using **FinBERT**.
+3. Generate and update a `.csv` file containing:
+   - **Title** of the news
+   - **Content** of the article
+   - **Sentiment probability scores**
+   - **Overall sentiment classification (Positive, Neutral, Negative)**
 
------>> The purpose of this repository is to teach you how to scrapt, analyse and save news in a DataFrame for later use. This can be applied to ANY website. You just need to make sure they have a news block with title and contents.
+This ensures you always have the **latest financial insights** without lifting a finger—just press **Run**, and let automation handle the rest! 
 
-For our experimentation we decided to scrapt news about XAU/USD or Gold Vs USD. Because gold is shiny and who doesn't like shiny?
+## Ready to Start? 🚀
+If you're eager to **automate financial news analysis**, this repository is your gateway to hands-free data collection and sentiment estimation.
 
-Ready to learn how to automatically get what you wish in internet without moving a finger?? Let's start (⌐■_■)
+Let's get started! **(⌐■_■)**
